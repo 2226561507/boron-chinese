@@ -7,7 +7,7 @@
 <p align="center">精美、可编辑的终端截图。</p>
 
 <p align="center">
-  <a href="https://console.cloud.tencent.com/edgeone/makers/new?repository-url=https://github.com/2226561507/boron-chinese&install-command=npm%20install&build-command=npm%20run%20build&output-directory=./dist">EdgeOne Makers 一键部署</a>
+  <a href="https://console.cloud.tencent.com/edgeone/makers/new?repository-url=https://github.com/2226561507/boron-chinese&install-command=npm%20install&build-command=npm%20run%20build&output-directory=./dist"><img src="docs/edgeone-button.svg" alt="Deploy with EdgeOne"></a>
 </p>
 
 <p align="center">
