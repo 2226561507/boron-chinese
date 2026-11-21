@@ -7,8 +7,6 @@
 <p align="center">精美、可编辑的终端截图。</p>
 
 <p align="center">
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F2226561507%2Fboron-chinese%2Ftree%2Fvercel-chinese">Vercel 一键部署</a>
-  ·
   <a href="https://console.cloud.tencent.com/edgeone/makers/new?repository-url=https://github.com/2226561507/boron-chinese&install-command=npm%20install&build-command=npm%20run%20build&output-directory=./dist">EdgeOne Makers 一键部署</a>
 </p>
 
@@ -18,6 +16,5 @@
 
 粘贴真实终端输出，保留 ANSI 颜色，像编辑文档一样修改，导出 PNG、SVG、JPEG 或 WebP。全部在浏览器本地完成，不上传内容。
 
-- Vercel 部署 `vercel-chinese` 分支；EdgeOne Makers 部署 `edgeone` 分支
 - 开发说明见 [AGENTS.md](AGENTS.md)
 - 在线体验：[boron.sh](https://boron.sh)
