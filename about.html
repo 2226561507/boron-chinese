@@ -33,7 +33,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1260" />
-    <meta property="og:image:alt" content="用彩虹终端格拼出的 Boron 字样，旁边是显示开发服务器启动输出的终端窗口，含彩色输出、下划线链接与绿色「就绪」徽章" />
+    <meta property="og:image:alt" content="Boron spelled out in rainbow terminal cells, beside a terminal window showing a dev server starting with coloured output, underlined links and a green READY badge" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="关于 Boron — 终端截图生成器" />
@@ -42,13 +42,13 @@
       content="了解 Boron 的功能、如何从不同终端复制彩色输出，以及它与代码截图工具的区别。"
     />
     <meta name="twitter:image" content="https://boron.sh/og.png" />
-    <meta name="twitter:image:alt" content="用彩虹终端格拼出的 Boron 字样，旁边是显示开发服务器启动输出的终端窗口，含彩色输出、下划线链接与绿色「就绪」徽章" />
+    <meta name="twitter:image:alt" content="Boron spelled out in rainbow terminal cells, beside a terminal window showing a dev server starting with coloured output, underlined links and a green READY badge" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "name": "关于 Boron",
+        "name": "About Boron",
         "url": "https://boron.sh/about",
         "about": { "@type": "WebApplication", "name": "Boron", "url": "https://boron.sh/" }
       }
@@ -85,7 +85,7 @@
           src="/example.png"
           width="1000"
           height="507"
-          alt="从 Boron 导出的终端截图：开发服务器启动中，含彩色提示符、下划线链接、填充的项目名和绿色 READY 徽章"
+          alt="A terminal screenshot exported from Boron: a dev server starting, with a colored prompt, underlined links, a filled project name and a green READY badge"
         />
 
         <h2>功能介绍</h2>
@@ -98,13 +98,13 @@
           </li>
           <li>
             <strong>选择矩形区域，而不只是文本片段。</strong> 终端输出是一个网格，因此经常需要修改纵向区域，例如表格的一列、<code>tree</code> 的缩进线或左侧时间戳。按住
-            <kbd>Alt</kbd>（Mac 上为 <kbd>⌥</kbd>）并拖动，即可选中每一行的这些单元格。
+            <kbd>Alt</kbd> (<kbd>⌥</kbd> on a Mac) and drag to select exactly those cells on every row.
           </li>
           <li>
             <strong>命令行高亮显示，输出内容淡化显示。</strong> 以 <code>$</code>、<code>❯</code>、单独的 <code>&gt;</code> 或 oh-my-zsh 的 <code>➜</code> 开头的行会被识别为命令。
           </li>
           <li>
-            <strong>八种主题。</strong> 包括 Boron、VS Code 深色+、德古拉、东京之夜、Catppuccin 摩卡、Nord 极地、One Dark 深色和 Solarized 深色，每种主题都配有相应背景。
+            <strong>八种主题。</strong> 包括 Boron、VS Code Dark+、Dracula、Tokyo Night、Catppuccin Mocha、Nord、One Dark 和 Solarized Dark，每种主题都配有相应背景。
           </li>
           <li>
             <strong>导出 PNG、SVG、JPEG 或 WebP</strong>，也可以直接将图片复制到剪贴板。SVG 会嵌入所用字体，因此在不同设备上也能保持一致的显示效果。
@@ -113,7 +113,8 @@
             <strong>复制文本内容</strong> ，格式可以是原始 ANSI、可运行的 Chalk 代码片段或纯文本。
           </li>
           <li>
-            <strong>通过链接分享。</strong> 整个文档及其设置都随 URL 传递，因此收到链接的人看到的会是同一张图片。
+            <strong>通过链接分享。</strong> The whole document and its settings travel in the URL, so a link opens the
+            same picture for whoever receives it.
           </li>
         </ul>
 
@@ -129,7 +130,8 @@
 
         <h2>哪些终端可以复制颜色</h2>
         <p>
-          支持富文本复制的终端会直接把颜色交给 Boron。只复制纯文本的终端也能使用，只要文本中包含转义码；例如可以通过 <code>pbcopy</code>（macOS）或 <code>xclip</code>（Linux）将命令输出送入剪贴板。
+          支持富文本复制的终端会直接把颜色交给 Boron。只复制纯文本的终端也能使用，只要文本中包含转义码；例如将命令输出通过 <code>pbcopy</code> or <code>xclip</code>
+          gives you.
         </p>
         <table>
           <thead>
@@ -140,19 +142,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Ghostty</td><td>默认支持</td><td></td></tr>
-            <tr><td>macOS Terminal.app</td><td>默认支持</td><td></td></tr>
-            <tr><td>VS Code、Cursor（编辑器）</td><td>默认支持</td><td></td></tr>
-            <tr><td>VS Code、Cursor（终端）</td><td>普通复制不支持</td><td>在终端菜单中选择「复制所选内容为 HTML」</td></tr>
-            <tr><td>iTerm2</td><td>普通复制不支持</td><td>按 <kbd>⌘⌥C</kbd>，或开启「默认带样式复制」</td></tr>
-            <tr><td>Konsole</td><td>默认支持</td><td></td></tr>
-            <tr><td>Tabby</td><td>默认支持</td><td></td></tr>
-            <tr><td>GNOME Terminal、Ptyxis</td><td>普通复制不支持</td><td>在右键菜单中选择「复制为 HTML」</td></tr>
-            <tr><td>Windows Terminal</td><td>默认关闭</td><td>在设置中开启 <code>copyFormatting</code></td></tr>
-            <tr><td>ConEmu</td><td>默认关闭</td><td>开启 <code>CTS.HtmlFormat</code></td></tr>
-            <tr><td>PuTTY</td><td>默认关闭</td><td>在区域选择设置中开启 RTF 复制</td></tr>
-            <tr><td>kitty</td><td>纯文本中包含转义码</td><td>绑定 <code>copy_ansi_to_clipboard</code></td></tr>
-            <tr><td>Alacritty、WezTerm、Rio、xterm、Hyper、Zed、JetBrains、tmux、screen</td><td>仅纯文本</td><td>请将命令输出通过管道送入剪贴板</td></tr>
+            <tr><td>Ghostty</td><td>Yes, by default</td><td></td></tr>
+            <tr><td>macOS Terminal.app</td><td>Yes, by default</td><td></td></tr>
+            <tr><td>VS Code, Cursor (editor)</td><td>Yes, by default</td><td></td></tr>
+            <tr><td>VS Code, Cursor (terminal)</td><td>Not on an ordinary copy</td><td>"Copy Selection as HTML" in the terminal's menu</td></tr>
+            <tr><td>iTerm2</td><td>Not on an ordinary copy</td><td><kbd>⌘⌥C</kbd>, or turn on "copy with styles by default"</td></tr>
+            <tr><td>Konsole</td><td>Yes, by default</td><td></td></tr>
+            <tr><td>Tabby</td><td>Yes, by default</td><td></td></tr>
+            <tr><td>GNOME Terminal, Ptyxis</td><td>Not on an ordinary copy</td><td>"Copy as HTML" in the context menu</td></tr>
+            <tr><td>Windows Terminal</td><td>Off by default</td><td>Turn on <code>copyFormatting</code> in the settings</td></tr>
+            <tr><td>ConEmu</td><td>Off by default</td><td>Turn on <code>CTS.HtmlFormat</code></td></tr>
+            <tr><td>PuTTY</td><td>Off by default</td><td>Turn on RTF copy in the selection settings</td></tr>
+            <tr><td>kitty</td><td>Escape codes in plain text</td><td>Bind <code>copy_ansi_to_clipboard</code></td></tr>
+            <tr><td>Alacritty, WezTerm, Rio, xterm, Hyper, Zed, JetBrains, tmux, screen</td><td>Plain text only</td><td>Pipe the command's output to the clipboard instead</td></tr>
           </tbody>
         </table>
 
@@ -167,20 +169,23 @@
         </p>
         <h3>终端只能复制纯文本，还能使用吗？</h3>
         <p>
-          可以。Boron 直接读取转义码，因此把命令的彩色输出通过管道送入剪贴板再粘贴即可。即使是完全不支持富文本复制的终端（如 Alacritty、WezTerm 和 tmux），仍可获得命令行高亮。
+          Yes. Boron reads the escape codes themselves, so pipe a command's colored output to the clipboard and paste
+          that. Terminals with no rich copy at all, such as Alacritty, WezTerm and tmux, still get the command-line
+          highlighting.
         </p>
         <h3>内容会被上传吗？</h3>
         <p>
-          不会。没有服务器；解析和渲染都在你的浏览器中完成。分享链接把文档直接放在 URL 里。
+          No. There is no server; parsing and rendering happen in your browser. A share link carries the document in the
+          URL itself.
         </p>
         <h3>源码是开源的吗？</h3>
         <p>
-          是的，开源地址为 <a href="https://github.com/colinhacks/boron">github.com/colinhacks/boron</a>。
+          Yes, at <a href="https://github.com/colinhacks/boron">github.com/colinhacks/boron</a>.
         </p>
 
         <footer class="page-footer">
-          作者：<a href="https://x.com/colinhacks">@colinhacks</a> ·
-          <a href="https://github.com/colinhacks/boron">代码仓库</a>
+          Built by <a href="https://x.com/colinhacks">@colinhacks</a> ·
+          <a href="https://github.com/colinhacks/boron">GitHub</a>
         </footer>
       </div>
     </main>

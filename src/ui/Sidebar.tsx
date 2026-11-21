@@ -207,7 +207,7 @@ export function Sidebar({
                 ))}
               </span>
               <span className="theme-card__name" style={{ color: candidate.foreground }}>
-                {t(candidate.name)}
+                {candidate.name}
               </span>
             </button>
           ))}

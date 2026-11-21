@@ -167,7 +167,7 @@ export function TerminalSurface({
       state,
       attributes: {
         class: "terminal-editable",
-        "aria-label": "终端内容",
+        "aria-label": "Terminal content",
         spellcheck: "false",
         autocorrect: "off",
         autocapitalize: "off",
