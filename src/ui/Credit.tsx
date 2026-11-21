@@ -23,7 +23,7 @@ export function Credit() {
         href="https://github.com/colinhacks/boron"
         target="_blank"
         rel="noreferrer"
-        aria-label="colinhacks/boron on GitHub"
+        aria-label="GitHub 上的 colinhacks/boron"
         title="colinhacks/boron"
       >
         <GitHubIcon />

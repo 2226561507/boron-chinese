@@ -572,8 +572,8 @@ export function App({ shared }: AppProps = {}) {
             type="button"
             className="button button--quiet language-toggle"
             onClick={() => setLanguage(language === "zh-CN" ? "en" : "zh-CN")}
-            aria-label={language === "zh-CN" ? "Switch to English" : "切换到简体中文"}
-            title={language === "zh-CN" ? "Switch to English" : "切换到简体中文"}
+            aria-label={t("Switch to English")}
+            title={t("Switch to English")}
           >
             {language === "zh-CN" ? "简体中文 / EN" : "EN / 简体中文"}
           </button>

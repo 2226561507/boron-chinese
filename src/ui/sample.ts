@@ -36,15 +36,15 @@ const badge = wrap("1;30;42");
 const SAMPLE_ANSI = [
   `${boldGreen("➜")}  ${boldCyan("boron")} ${blue("git:(")}${red("main")}${blue(")")} ${yellow("✗")} ${bold("nub run dev")}`,
   "",
-  `  ${boldMagenta("FRIZZ")} ${dim("v0.1.7")}  ${dim("ready in 1.24s")}`,
+  `  ${boldMagenta("FRIZZ")} ${dim("v0.1.7")}  ${dim("1.24 秒内就绪")}`,
   "",
-  `  ${green("➜")}  ${bold("Local:")}    ${link("http://127.0.0.1:4922/")}`,
-  `  ${green("➜")}  ${bold("Network:")}  ${link("http://192.168.1.24:4922/")}`,
-  `  ${green("➜")}  ${bold("Project:")}  ${white("boron")} ${dim("— ~/Documents/projects/boron")}`,
+  `  ${green("➜")}  ${bold("本地地址：")}    ${link("http://127.0.0.1:4922/")}`,
+  `  ${green("➜")}  ${bold("网络地址：")}  ${link("http://192.168.1.24:4922/")}`,
+  `  ${green("➜")}  ${bold("项目：")}  ${white("boron")} ${dim("— ~/Documents/projects/boron")}`,
   "",
-  `  ${green("✓")} 85 passed   ${yellow("⚠")} ${dim("2 warnings")}   ${red("✗")} ${dim("0 failed")}`,
+  `  ${green("✓")} 85 项通过   ${yellow("⚠")} ${dim("2 项警告")}   ${red("✗")} ${dim("0 项失败")}`,
   "",
-  `  ${badge(" READY ")} ${dim("watching for changes — press")} ${bold("q")} ${dim("to quit")}`,
+  `  ${badge(" 就绪 ")} ${dim("正在监听文件变化 — 按")} ${bold("q")} ${dim("退出")}`,
 ].join("\n");
 
 export function sampleDocument(): TerminalDocument {
